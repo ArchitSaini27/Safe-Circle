@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background"
+    >
+
+    <TextView
+        android:id="@+id/text_security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/security"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/home_pink_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/pink"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toBottomOf="@id/text_security">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_sos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/sos"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/home_pink_card_view"
+        app:layout_constraintTop_toTopOf="@id/home_pink_card_view" />
+
+    <TextView
+        android:id="@+id/sos_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/sos_text"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/image_sos"
+        app:layout_constraintStart_toStartOf="@id/text_sos"
+        app:layout_constraintTop_toBottomOf="@id/text_sos" />
+
+    <ImageView
+        android:id="@+id/image_sos"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
+        android:elevation="8dp"
+        android:src="@drawable/sos"
+        app:layout_constraintBottom_toBottomOf="@id/home_pink_card_view"
+        app:layout_constraintEnd_toEndOf="@id/home_pink_card_view"
+        app:layout_constraintTop_toTopOf="@id/home_pink_card_view" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/home_green_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toBottomOf="@id/home_pink_card_view">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_guard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/guard"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/home_green_card_view"
+        app:layout_constraintTop_toTopOf="@id/home_green_card_view" />
+
+    <TextView
+        android:id="@+id/guard_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/guard_text"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/image_guard"
+        app:layout_constraintStart_toStartOf="@id/text_guard"
+        app:layout_constraintTop_toBottomOf="@id/text_guard" />
+
+    <ImageView
+        android:id="@+id/image_guard"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
+        android:elevation="8dp"
+        android:src="@drawable/guard"
+        app:layout_constraintBottom_toBottomOf="@id/home_green_card_view"
+        app:layout_constraintEnd_toEndOf="@id/home_green_card_view"
+        app:layout_constraintTop_toTopOf="@id/home_green_card_view" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
