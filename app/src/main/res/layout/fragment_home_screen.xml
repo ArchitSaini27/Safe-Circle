@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_background"
-    >
+    android:background="@color/white_background">
 
     <TextView
         android:id="@+id/text_my_family"
@@ -30,17 +29,26 @@
         android:src="@drawable/icon_location"
         app:layout_constraintBottom_toBottomOf="@id/text_my_family"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iconThreeDots"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
         android:src="@drawable/icon_three_dots"
         app:layout_constraintBottom_toBottomOf="@id/text_my_family"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/member_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_my_family"
+        tools:listitem="@layout/member_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
