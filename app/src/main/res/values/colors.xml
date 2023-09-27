@@ -6,4 +6,7 @@
     <color name="dark_grey">#BDBDBD</color>
     <color name="pink">#F65662</color>
     <color name="green">#63d2c7</color>
+    <color name="dark_green">#0E604C</color>
+    <color name="light_purple">#B9A2FB</color>
+    <color name="blue">#81bcf2</color>
 </resources>
