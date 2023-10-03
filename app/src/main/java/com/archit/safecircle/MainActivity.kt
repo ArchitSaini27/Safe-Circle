@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
                     inflateFragment(HomeScreenFragment.newInstance())
                 }
                 R.id.navbar_dashboard -> {
-                    inflateFragment(DashboardScreenFragment.newInstance())
+                    inflateFragment(DashboardMapFragment.newInstance())
                 }
                 else -> {
                     inflateFragment(ProfileScreenFragment.newInstance())
